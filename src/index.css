@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #cf9a48;
+}
+
+body {
+  @apply overflow-x-hidden;
+}
+
+.banner {
+  @apply min-h-screen p-2 md:px-6 md:py-5 relative flex flex-col justify-between;
+  background-image: url(/section-banner-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.banner__header {
+  @apply flex items-center justify-between pr-4;
+}
+
+.banner__logo {
+  @apply w-14 md:w-28;
+}
+
+.banner__menu-icon {
+  @apply h-3.5 md:hidden;
+}
+
+.banner__nav {
+  @apply gap-12 hidden md:flex;
+}
+
+.banner__link {
+  @apply font-thin capitalize text-xs first:font-bold;
+}
+
+.banner__title {
+  @apply text-white font-bold text-3xl text-center md:text-5xl tracking-[0.1em] md:tracking-[0.3em];
+}
+
+.banner__content {
+  @apply absolute top-1/2 left-0 w-full;
+}
+
+.section-title {
+  @apply text-primary text-center font-bold text-lg md:text-xl tracking-[0.5em] md:tracking-[1em];
+}
+
+.banner__cards {
+  @apply gap-8 hidden md:flex mx-auto;
+}
+
+.banner-card {
+  @apply bg-white/50 rounded-2xl p-3;
+}
+
+.banner-card__content {
+  @apply relative
+}
+
+.banner-card__image {}
+
+.banner-card__text {
+  @apply absolute bottom-1 right-1 text-white flex items-center text-xs;
+}
+
+.slick-slider {
+  position: static !important;
+}
+
+.shadow-custom {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}

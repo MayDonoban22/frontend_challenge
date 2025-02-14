@@ -1,0 +1,1 @@
+export const URL_BASE = "https://api.test.interactiva.net.co/api"
